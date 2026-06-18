@@ -71,11 +71,9 @@
                         <a href="#contact" class="button button--secondary" data-i18n="btn_contact_me">Contactar</a>
                     </div>
                 </div>
-                <!-- FOTO MIA https://i.ibb.co/1th9LQ9k/yo.png -->
                 <div class="hero__img-container">
                     <div class="hero__img-blob">
-                        <img src="https://fbi.cults3d.com/uploaders/18847341/illustration-file/9f16955e-6d08-4dbe-bfc0-0d0201d1085c/1A.png"  
-            
+                        <img src="https://i.ibb.co/1th9LQ9k/yo.png"
                             alt="Profile Photo" class="hero__img">
                     </div>
                 </div>
@@ -155,8 +153,8 @@
 
                 <article class="projects__card">
                     <div class="projects__image">
-                        <img src="https://via.placeholder.com/600x400/1e1e1e/7C3AED?text=Factos+App"
-                            alt="Factos Social App" class="projects__img">
+                        <img src="img/factos_logo.png"
+                            alt="Factos Social App Logo" class="projects__img">
                     </div>
                     <div class="projects__content">
                         <h3 class="projects__title">Factos - Social Belief Engine</h3>
@@ -168,16 +166,19 @@
                             <span class="projects__tag">Supabase</span>
                             <span class="projects__tag">HTML5/CSS3</span>
                         </div>
-                        <div class="projects__links">
-                            <a href="#" class="button button--small button--secondary"><i
+                        <div class="projects__links" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                            <a href="#" target="_blank" class="button button--small button--secondary"><i
                                     class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="#" target="_blank" class="button button--small" data-i18n="btn_live_demo">Demo en vivo</a>
+                            <button type="button" class="button button--small button--secondary" onclick="openFactosModal()"
+                                data-i18n="btn_view_details">Ver Detalles</button>
                         </div>
                     </div>
                 </article>
 
                 <article class="projects__card">
                     <div class="projects__image">
-                        <img src="https://via.placeholder.com/600x400/1e1e1e/7C3AED?text=Givap+Frend" alt="GIVAP FREND"
+                        <img src="img/givap_logo.png" alt="GIVAP FREND Logo"
                             class="projects__img">
                     </div>
                     <div class="projects__content">
@@ -192,7 +193,8 @@
                             <a href="https://github.com/elekParra/dont_fall_game.git" target="_blank"
                                 class="button button--small button--secondary"><i class="fa-brands fa-github"></i>
                                 GitHub</a>
-                            <button type="button" class="button button--small" onclick="openGameModal()"
+                            <a href="#" target="_blank" class="button button--small" data-i18n="btn_live_demo">Demo en vivo</a>
+                            <button type="button" class="button button--small button--secondary" onclick="openGameModal()"
                                 data-i18n="btn_view_details">Ver Detalles</button>
                         </div>
                     </div>
@@ -200,11 +202,11 @@
 
                 <article class="projects__card">
                     <div class="projects__image">
-                        <img src="https://via.placeholder.com/600x400/1e1e1e/7C3AED?text=Project+3" alt="Project 3"
+                        <img src="https://via.placeholder.com/600x400/1e1e1e/7C3AED?text=Aurea+perfumes" alt="Aurea perfumes"
                             class="projects__img">
                     </div>
                     <div class="projects__content">
-                        <h3 class="projects__title">Shopify Store #1</h3>
+                        <h3 class="projects__title">Aurea perfumes</h3>
                         <p class="projects__description" data-i18n="proj3_desc">Tienda online desarrollada usando
                             Shopify, PHP y JavaScript. Tema personalizado e integración de aplicaciones.</p>
                         <div class="projects__tags">
@@ -212,8 +214,10 @@
                             <span class="projects__tag">PHP</span>
                             <span class="projects__tag">JavaScript</span>
                         </div>
-                        <div class="projects__links">
+                        <div class="projects__links" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
                             <a href="#" class="button button--small" data-i18n="btn_live_demo">Demo en vivo</a>
+                            <button type="button" class="button button--small button--secondary" onclick="openAureaModal()"
+                                data-i18n="btn_view_details">Ver Detalles</button>
                         </div>
                     </div>
                 </article>
@@ -387,6 +391,40 @@
                     personalizadas, detección de colisiones, renderizado de sprites y un bucle de juego basado en
                     estados sin depender de motores de juegos externos. Presenta mecánicas engañosas y trampas ocultas.
                 </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Aurea Modal -->
+    <div class="modal" id="aurea-modal">
+        <div class="modal__content">
+            <span class="modal__close" onclick="closeAureaModal()"><i class="fa-solid fa-xmark"></i></span>
+            <h3 class="modal__title" data-i18n="aurea_modal_title">Aurea perfumes - Detalles</h3>
+            <div class="modal__images">
+                <img src="img/aurea1.png" alt="Aurea 1">
+                <img src="img/aurea2.png" alt="Aurea 2">
+            </div>
+            <div class="modal__description">
+                <h4 data-i18n="modal_tech">Tecnologías Utilizadas</h4>
+                <p data-i18n="aurea_modal_desc">Tienda online desarrollada usando <strong>Shopify</strong>, <strong>PHP</strong> y <strong>JavaScript</strong>. Tema personalizado e integración de aplicaciones.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Factos Modal -->
+    <div class="modal" id="factos-modal">
+        <div class="modal__content">
+            <span class="modal__close" onclick="closeFactosModal()"><i class="fa-solid fa-xmark"></i></span>
+            <h3 class="modal__title" data-i18n="factos_modal_title">Factos - Detalles</h3>
+            <div class="modal__images">
+                <img src="img/factos1.png" alt="Factos App Screenshot 1">
+                <img src="img/factos2.png" alt="Factos App Screenshot 2">
+                <img src="img/factos3.png" alt="Factos App Screenshot 3">
+            </div>
+            <div class="modal__description">
+                <h4 data-i18n="modal_tech">Tecnologías Utilizadas</h4>
+                <p data-i18n="factos_modal_desc">Plataforma desarrollada con <strong>JavaScript</strong>, <strong>Supabase</strong> y <strong>HTML5/CSS3</strong> para verificación social descentralizada.</p>
             </div>
         </div>
     </div>

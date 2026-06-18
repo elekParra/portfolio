@@ -975,10 +975,12 @@ body.dark-theme .projects__tag {
 
 .modal__content {
     background-color: var(--container-color);
-    padding: 2rem;
+    padding: 2.5rem 2rem 2rem;
     border-radius: var(--radius-md);
-    width: 90%;
-    max-width: 600px;
+    width: 95%;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
     position: relative;
     box-shadow: var(--shadow-lg);
 }
@@ -998,19 +1000,26 @@ body.dark-theme .projects__tag {
 }
 
 .modal__images {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .modal__images img {
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-md);
     width: 100%;
-    max-width: 250px;
+    height: auto;
     object-fit: cover;
+    object-position: top;
     border: 2px solid rgba(124, 58, 237, 0.5);
     animation: neon-pulse 2s infinite alternate;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.modal__images img:hover {
+    transform: scale(1.03);
 }
 
 @keyframes neon-pulse {

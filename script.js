@@ -106,6 +106,8 @@ themeButton.addEventListener('click', () => {
 
 /* =============== MODAL LOGIC =============== */
 const gameModal = document.getElementById('game-modal');
+const aureaModal = document.getElementById('aurea-modal');
+const factosModal = document.getElementById('factos-modal');
 
 function openGameModal() {
     gameModal?.classList.add('active');
@@ -115,10 +117,32 @@ function closeGameModal() {
     gameModal?.classList.remove('active');
 }
 
+function openAureaModal() {
+    aureaModal?.classList.add('active');
+}
+
+function closeAureaModal() {
+    aureaModal?.classList.remove('active');
+}
+
+function openFactosModal() {
+    factosModal?.classList.add('active');
+}
+
+function closeFactosModal() {
+    factosModal?.classList.remove('active');
+}
+
 // Close modal when clicking outside of it
 window.addEventListener('click', (e) => {
     if (e.target === gameModal) {
         closeGameModal();
+    }
+    if (e.target === aureaModal) {
+        closeAureaModal();
+    }
+    if (e.target === factosModal) {
+        closeFactosModal();
     }
 });
 
@@ -186,7 +210,11 @@ const translations = {
         footer_copy: "All rights reserved.",
         modal_title: "GIVAP FREND - Details",
         modal_tech: "Technologies Used",
-        modal_desc: "Built completely from scratch using <strong>Vanilla JavaScript</strong>, <strong>HTML5</strong>, and <strong>CSS3</strong>. It implements custom game physics, collision detection, sprite rendering, and a state-based game loop without relying on external game engines. Features classic platformer gameplay with hidden traps and deceiving mechanics."
+        modal_desc: "Built completely from scratch using <strong>Vanilla JavaScript</strong>, <strong>HTML5</strong>, and <strong>CSS3</strong>. It implements custom game physics, collision detection, sprite rendering, and a state-based game loop without relying on external game engines. Features classic platformer gameplay with hidden traps and deceiving mechanics.",
+        aurea_modal_title: "Aurea perfumes - Details",
+        aurea_modal_desc: "Online store developed using <strong>Shopify</strong>, <strong>PHP</strong>, and <strong>JavaScript</strong>. Custom theme and app integration.",
+        factos_modal_title: "Factos - Details",
+        factos_modal_desc: "Platform developed with <strong>JavaScript</strong>, <strong>Supabase</strong>, and <strong>HTML5/CSS3</strong> for decentralized social verification."
     },
     es: {
         page_title: "Adrian Parra - Desarrollador Web Full-Stack",
@@ -250,7 +278,11 @@ const translations = {
         footer_copy: "Todos los derechos reservados.",
         modal_title: "GIVAP FREND - Detalles",
         modal_tech: "Tecnologías Utilizadas",
-        modal_desc: "Desarrollado completamente desde cero utilizando <strong>JavaScript Nativo</strong>, <strong>HTML5</strong> y <strong>CSS3</strong>. Implementa físicas de juego personalizadas, detección de colisiones, renderizado de sprites y un bucle de juego basado en estados sin depender de motores de juegos externos. Presenta mecánicas engañosas y trampas ocultas."
+        modal_desc: "Desarrollado completamente desde cero utilizando <strong>JavaScript Nativo</strong>, <strong>HTML5</strong> y <strong>CSS3</strong>. Implementa físicas de juego personalizadas, detección de colisiones, renderizado de sprites y un bucle de juego basado en estados sin depender de motores de juegos externos. Presenta mecánicas engañosas y trampas ocultas.",
+        aurea_modal_title: "Aurea perfumes - Detalles",
+        aurea_modal_desc: "Tienda online desarrollada usando <strong>Shopify</strong>, <strong>PHP</strong> y <strong>JavaScript</strong>. Tema personalizado e integración de aplicaciones.",
+        factos_modal_title: "Factos - Detalles",
+        factos_modal_desc: "Plataforma desarrollada con <strong>JavaScript</strong>, <strong>Supabase</strong> y <strong>HTML5/CSS3</strong> para verificación social descentralizada."
     }
 };
 
