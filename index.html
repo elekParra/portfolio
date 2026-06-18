@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page_title">Adrian Parra - Desarrollador Web Full-Stack</title>
+    <meta name="description"
+        content="Portfolio of Adrian Parra, a Full-Stack Web Developer specialized in modern web experiences and e-commerce solutions.">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <a href="#" class="nav__logo">Portfolio.</a>
+                <button id="lang-toggle" class="lang-toggle" aria-label="Toggle language">EN</button>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link" data-i18n="nav_home">Inicio</a>
+                    </li>
+                    <li class="nav__item"><a href="#about" class="nav__link" data-i18n="nav_about">Sobre Mí</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link" data-i18n="nav_skills">Habilidades</a>
+                    </li>
+                    <li class="nav__item"><a href="#projects" class="nav__link" data-i18n="nav_projects">Proyectos</a>
+                    </li>
+                    <li class="nav__item"><a href="#experience" class="nav__link"
+                            data-i18n="nav_experience">Experiencia</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link" data-i18n="nav_contact">Contacto</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <i class="fa-regular fa-moon change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero__container container grid">
+                <div class="hero__data">
+                    <h1 class="hero__title"><span data-i18n="hero_hi">Hola, soy</span> <span
+                            class="text-gradient">Adrian Parra</span></h1>
+                    <h3 class="hero__subtitle" data-i18n="hero_subtitle">Desarrollador Web Full-Stack</h3>
+                    <p class="hero__description" data-i18n="hero_desc">
+                        Apasionado por crear experiencias web modernas y soluciones de comercio electrónico.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#projects" class="button button--primary" data-i18n="btn_view_projects">Ver
+                            Proyectos</a>
+                        <a href="#contact" class="button button--secondary" data-i18n="btn_contact_me">Contactar</a>
+                    </div>
+                </div>
+                <div class="hero__img-container">
+                    <div class="hero__img-blob">
+                        <img src="https://fbi.cults3d.com/uploaders/18847341/illustration-file/9f16955e-6d08-4dbe-bfc0-0d0201d1085c/1A.png"
+                            alt="Profile Photo" class="hero__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <h2 class="section__title" data-i18n="about_title">Sobre Mí</h2>
+            <span class="section__subtitle" data-i18n="about_subtitle">Mi Introducción</span>
+            <div class="about__container container grid">
+                <img src="https://via.placeholder.com/400x500/7C3AED/FFFFFF?text=About+Photo" alt="About Photo"
+                    class="about__img">
+                <div class="about__data">
+                    <p class="about__description" data-i18n="about_desc">
+                        Soy un desarrollador web dedicado con gran experiencia en el desarrollo con JavaScript y la
+                        construcción de plataformas sólidas de comercio electrónico. Con una mentalidad orientada a la
+                        resolución de problemas y pasión por crear sitios web modernos y responsivos, mi objetivo es
+                        construir experiencias digitales que no solo sean visualmente impresionantes, sino también
+                        altamente funcionales.
+                    </p>
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">05+</span>
+                            <span class="about__info-name" data-i18n="about_exp">Años de <br> experiencia</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">50+</span>
+                            <span class="about__info-name" data-i18n="about_proj">Proyectos <br> completados</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">20+</span>
+                            <span class="about__info-name" data-i18n="about_clients">Clientes <br> satisfechos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <h2 class="section__title" data-i18n="skills_title">Habilidades</h2>
+            <span class="section__subtitle" data-i18n="skills_subtitle">Mi nivel técnico</span>
+            <div class="skills__container container grid">
+                <div class="skills__card"><i class="fa-brands fa-js skills__icon"></i>
+                    <h3 class="skills__title">JavaScript</h3>
+                </div>
+                <div class="skills__card"><i class="fa-brands fa-php skills__icon"></i>
+                    <h3 class="skills__title">PHP</h3>
+                </div>
+                <div class="skills__card"><i class="fa-brands fa-shopify skills__icon"></i>
+                    <h3 class="skills__title">Shopify</h3>
+                </div>
+                <div class="skills__card"><i class="fa-brands fa-html5 skills__icon"></i>
+                    <h3 class="skills__title">HTML5</h3>
+                </div>
+                <div class="skills__card"><i class="fa-brands fa-css3-alt skills__icon"></i>
+                    <h3 class="skills__title">CSS3</h3>
+                </div>
+                <div class="skills__card"><i class="fa-solid fa-mobile-screen-button skills__icon"></i>
+                    <h3 class="skills__title" data-i18n="skill_responsive">Diseño Responsivo</h3>
+                </div>
+                <div class="skills__card"><i class="fa-solid fa-cart-shopping skills__icon"></i>
+                    <h3 class="skills__title" data-i18n="skill_ecommerce">E-commerce</h3>
+                </div>
+                <div class="skills__card"><i class="fa-brands fa-github skills__icon"></i>
+                    <h3 class="skills__title">Git/GitHub</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <h2 class="section__title" data-i18n="projects_title">Proyectos</h2>
+            <span class="section__subtitle" data-i18n="projects_subtitle">Trabajos más recientes</span>
+            <div class="projects__container container grid">
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="https://via.placeholder.com/600x400/1e1e1e/7C3AED?text=Factos+App"
+                            alt="Factos Social App" class="projects__img">
+                    </div>
+                    <div class="projects__content">
+                        <h3 class="projects__title">Factos - Social Belief Engine</h3>
+                        <p class="projects__description" data-i18n="proj1_desc">Una plataforma de verificación social
+                            descentralizada donde los usuarios pueden publicar declaraciones, debatir su validez y
+                            construir una reputación de confianza basada en el consenso de la comunidad.</p>
+                        <div class="projects__tags">
+                            <span class="projects__tag">JavaScript</span>
+                            <span class="projects__tag">Supabase</span>
+                            <span class="projects__tag">HTML5/CSS3</span>
+                        </div>
+                        <div class="projects__links">
+                            <a href="#" class="button button--small button--secondary"><i
+                                    class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="https://via.placeholder.com/600x400/1e1e1e/7C3AED?text=Givap+Frend" alt="GIVAP FREND"
+                            class="projects__img">
+                    </div>
+                    <div class="projects__content">
+                        <h3 class="projects__title">GIVAP FREND</h3>
+                        <p class="projects__description" data-i18n="proj2_desc">Un desafiante juego de plataformas en 2D
+                            donde nada es lo que parece. Salta, esquiva trampas y sobrevive a sorpresas inesperadas.</p>
+                        <div class="projects__tags">
+                            <span class="projects__tag">JavaScript</span>
+                            <span class="projects__tag">HTML5 Canvas</span>
+                        </div>
+                        <div class="projects__links" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                            <a href="https://github.com/elekParra/dont_fall_game.git" target="_blank"
+                                class="button button--small button--secondary"><i class="fa-brands fa-github"></i>
+                                GitHub</a>
+                            <button type="button" class="button button--small" onclick="openGameModal()"
+                                data-i18n="btn_view_details">Ver Detalles</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="https://via.placeholder.com/600x400/1e1e1e/7C3AED?text=Project+3" alt="Project 3"
+                            class="projects__img">
+                    </div>
+                    <div class="projects__content">
+                        <h3 class="projects__title">Shopify Store #1</h3>
+                        <p class="projects__description" data-i18n="proj3_desc">Tienda online desarrollada usando
+                            Shopify, PHP y JavaScript. Tema personalizado e integración de aplicaciones.</p>
+                        <div class="projects__tags">
+                            <span class="projects__tag">Shopify</span>
+                            <span class="projects__tag">PHP</span>
+                            <span class="projects__tag">JavaScript</span>
+                        </div>
+                        <div class="projects__links">
+                            <a href="#" class="button button--small" data-i18n="btn_live_demo">Demo en vivo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="https://via.placeholder.com/600x400/1e1e1e/7C3AED?text=Project+4" alt="Project 4"
+                            class="projects__img">
+                    </div>
+                    <div class="projects__content">
+                        <h3 class="projects__title">Shopify Store #2</h3>
+                        <p class="projects__description" data-i18n="proj4_desc">Sitio web de comercio electrónico creado
+                            con Shopify, PHP y JavaScript. Optimizado para altas conversiones.</p>
+                        <div class="projects__tags">
+                            <span class="projects__tag">Shopify</span>
+                            <span class="projects__tag">PHP</span>
+                            <span class="projects__tag">JavaScript</span>
+                        </div>
+                        <div class="projects__links">
+                            <a href="#" class="button button--small" data-i18n="btn_live_demo">Demo en vivo</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience section" id="experience">
+            <h2 class="section__title" data-i18n="exp_title">Experiencia Destacada</h2>
+            <span class="section__subtitle" data-i18n="exp_subtitle">Mi trayectoria profesional</span>
+            <div class="experience__container container">
+                <div class="experience__timeline">
+                    <div class="experience__item">
+                        <div class="experience__dot"></div>
+                        <div class="experience__content">
+                            <h3 class="experience__title" data-i18n="exp1_title">Desarrollo Front-End</h3>
+                            <span class="experience__subtitle" data-i18n="exp1_sub">Varias Agencias</span>
+                            <span class="experience__calendar"><i class="fa-regular fa-calendar"></i> 2018 - 2020</span>
+                            <p class="experience__description" data-i18n="exp1_desc">Desarrollo de interfaces de usuario
+                                interactivas y responsivas usando HTML, CSS y JS nativo moderno.</p>
+                        </div>
+                    </div>
+                    <div class="experience__item">
+                        <div class="experience__dot"></div>
+                        <div class="experience__content">
+                            <h3 class="experience__title" data-i18n="exp2_title">Proyectos de Desarrollo JavaScript</h3>
+                            <span class="experience__subtitle" data-i18n="exp2_sub">Autónomo</span>
+                            <span class="experience__calendar"><i class="fa-regular fa-calendar"></i> 2020 - 2022</span>
+                            <p class="experience__description" data-i18n="exp2_desc">Construcción de aplicaciones
+                                complejas de página única (SPA) y herramientas web interactivas.</p>
+                        </div>
+                    </div>
+                    <div class="experience__item">
+                        <div class="experience__dot"></div>
+                        <div class="experience__content">
+                            <h3 class="experience__title" data-i18n="exp3_title">Soluciones E-commerce</h3>
+                            <span class="experience__subtitle" data-i18n="exp3_sub">Startup Tecnológica</span>
+                            <span class="experience__calendar"><i class="fa-regular fa-calendar"></i> 2022 - 2023</span>
+                            <p class="experience__description" data-i18n="exp3_desc">Lideré el desarrollo de plataformas
+                                personalizadas escalables de comercio electrónico.</p>
+                        </div>
+                    </div>
+                    <div class="experience__item">
+                        <div class="experience__dot"></div>
+                        <div class="experience__content">
+                            <h3 class="experience__title" data-i18n="exp4_title">Desarrollo de Tiendas Shopify</h3>
+                            <span class="experience__subtitle" data-i18n="exp4_sub">Agencia E-commerce</span>
+                            <span class="experience__calendar"><i class="fa-regular fa-calendar"></i> <span
+                                    data-i18n="exp_present">2023 - Presente</span></span>
+                            <p class="experience__description" data-i18n="exp4_desc">Creación de tiendas Shopify
+                                premium, personalización de temas y desarrollo de aplicaciones privadas usando PHP y JS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title" data-i18n="contact_title">Contactar</h2>
+            <span class="section__subtitle" data-i18n="contact_subtitle">Ponte en contacto</span>
+            <div class="contact__container container grid">
+                <div class="contact__info">
+                    <div class="contact__card">
+                        <i class="fa-regular fa-envelope contact__card-icon"></i>
+                        <h3 class="contact__card-title" data-i18n="contact_email">Correo</h3>
+                        <span class="contact__card-data">hello@yourdomain.com</span>
+                        <a href="mailto:hello@yourdomain.com" class="contact__button"><span
+                                data-i18n="contact_write_me">Escríbeme</span> <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="contact__card">
+                        <i class="fa-brands fa-linkedin contact__card-icon"></i>
+                        <h3 class="contact__card-title">LinkedIn</h3>
+                        <span class="contact__card-data">/in/yourprofile</span>
+                        <a href="#" class="contact__button"><span data-i18n="contact_connect">Conectar</span> <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="contact__card">
+                        <i class="fa-brands fa-github contact__card-icon"></i>
+                        <h3 class="contact__card-title">GitHub</h3>
+                        <span class="contact__card-data">@yourgithub</span>
+                        <a href="#" class="contact__button"><span data-i18n="contact_follow">Seguir</span> <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form">
+                    <div class="contact__form-group">
+                        <div class="contact__form-div">
+                            <label for="name" class="contact__form-tag" data-i18n="form_name">Nombre</label>
+                            <input type="text" id="name" placeholder="Inserta tu nombre" class="contact__form-input"
+                                data-i18n-placeholder="form_name_ph" required>
+                        </div>
+                        <div class="contact__form-div">
+                            <label for="email" class="contact__form-tag" data-i18n="form_mail">Correo</label>
+                            <input type="email" id="email" placeholder="Inserta tu correo" class="contact__form-input"
+                                data-i18n-placeholder="form_mail_ph" required>
+                        </div>
+                    </div>
+                    <div class="contact__form-div contact__form-area">
+                        <label for="message" class="contact__form-tag" data-i18n="form_project">Proyecto</label>
+                        <textarea name="message" id="message" cols="30" rows="10"
+                            placeholder="Escribe los detalles de tu proyecto" class="contact__form-input"
+                            data-i18n-placeholder="form_project_ph" required></textarea>
+                    </div>
+                    <button type="submit" class="button button--primary" data-i18n="btn_send">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Adrian Parra</h1>
+            <ul class="footer__list">
+                <li><a href="#about" class="footer__link" data-i18n="nav_about">Sobre Mí</a></li>
+                <li><a href="#projects" class="footer__link" data-i18n="nav_projects">Proyectos</a></li>
+                <li><a href="#experience" class="footer__link" data-i18n="nav_experience">Experiencia</a></li>
+            </ul>
+            <ul class="footer__social">
+                <a href="#" class="footer__social-link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="footer__social-link"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="footer__social-link"><i class="fa-brands fa-twitter"></i></a>
+            </ul>
+            <span class="footer__copy">&#169; Adrian Parra. <span data-i18n="footer_copy">Todos los derechos
+                    reservados.</span></span>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Game Modal -->
+    <div class="modal" id="game-modal">
+        <div class="modal__content">
+            <span class="modal__close" onclick="closeGameModal()"><i class="fa-solid fa-xmark"></i></span>
+            <h3 class="modal__title" data-i18n="modal_title">GIVAP FREND - Detalles</h3>
+            <div class="modal__images">
+                <img src="img/gameplay1.png" alt="Gameplay 1">
+                <img src="img/gameplay2.png" alt="Gameplay 2">
+            </div>
+            <div class="modal__description">
+                <h4 data-i18n="modal_tech">Tecnologías Utilizadas</h4>
+                <p data-i18n="modal_desc">Desarrollado completamente desde cero utilizando <strong>JavaScript
+                        Nativo</strong>, <strong>HTML5</strong> y <strong>CSS3</strong>. Implementa físicas de juego
+                    personalizadas, detección de colisiones, renderizado de sprites y un bucle de juego basado en
+                    estados sin depender de motores de juegos externos. Presenta mecánicas engañosas y trampas ocultas.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
