@@ -108,6 +108,7 @@ themeButton.addEventListener('click', () => {
 const gameModal = document.getElementById('game-modal');
 const aureaModal = document.getElementById('aurea-modal');
 const factosModal = document.getElementById('factos-modal');
+const connectModal = document.getElementById('connect-modal');
 
 function openGameModal() {
     gameModal?.classList.add('active');
@@ -133,6 +134,14 @@ function closeFactosModal() {
     factosModal?.classList.remove('active');
 }
 
+function openConnectModal() {
+    connectModal?.classList.add('active');
+}
+
+function closeConnectModal() {
+    connectModal?.classList.remove('active');
+}
+
 // Close modal when clicking outside of it
 window.addEventListener('click', (e) => {
     if (e.target === gameModal) {
@@ -143,6 +152,9 @@ window.addEventListener('click', (e) => {
     }
     if (e.target === factosModal) {
         closeFactosModal();
+    }
+    if (e.target === connectModal) {
+        closeConnectModal();
     }
 });
 
@@ -176,7 +188,7 @@ const translations = {
         proj1_desc: "A decentralized social verification platform where users can publish statements, debate validity, and build a trust reputation based on community consensus.",
         proj2_desc: "A challenging 2D platformer game where nothing is what it seems. Jump, dodge traps, and survive unexpected surprises.",
         proj3_desc: "Online store developed using Shopify, PHP, and JavaScript. Custom theme and app integration.",
-        proj4_desc: "E-commerce website built with Shopify, PHP, and JavaScript. Optimized for high conversions.",
+        proj4_desc: "Connect the numbers in order inside a grid following the correct path. An intuitive and addictive puzzle that tests your logic.",
         btn_view_details: "View Details",
         btn_live_demo: "Live Demo",
         exp_title: "Experience Highlights",
@@ -214,7 +226,9 @@ const translations = {
         aurea_modal_title: "Aurea perfumes - Details",
         aurea_modal_desc: "Online store developed using <strong>Shopify</strong>, <strong>PHP</strong>, and <strong>JavaScript</strong>. Custom theme and app integration.",
         factos_modal_title: "Factos - Details",
-        factos_modal_desc: "Platform developed with <strong>JavaScript</strong>, <strong>Supabase</strong>, and <strong>HTML5/CSS3</strong> for decentralized social verification."
+        factos_modal_desc: "Platform developed with <strong>JavaScript</strong>, <strong>Supabase</strong>, and <strong>HTML5/CSS3</strong> for decentralized social verification.",
+        connect_modal_title: "ConnectGame - Details",
+        connect_modal_desc: "Developed with <strong>Native JavaScript</strong> and <strong>HTML5 Canvas</strong>. Each level is different, with unique routes and progressive difficulty. Easy to play, hard to master, ideal for quick challenges."
     },
     es: {
         page_title: "Adrian Parra - Desarrollador Web Full-Stack",
@@ -244,7 +258,7 @@ const translations = {
         proj1_desc: "Una plataforma de verificación social descentralizada donde los usuarios pueden publicar declaraciones, debatir su validez y construir una reputación de confianza basada en el consenso de la comunidad.",
         proj2_desc: "Un desafiante juego de plataformas en 2D donde nada es lo que parece. Salta, esquiva trampas y sobrevive a sorpresas inesperadas.",
         proj3_desc: "Tienda online desarrollada usando Shopify, PHP y JavaScript. Tema personalizado e integración de aplicaciones.",
-        proj4_desc: "Sitio web de comercio electrónico creado con Shopify, PHP y JavaScript. Optimizado para altas conversiones.",
+        proj4_desc: "Conecta los números en orden dentro de una cuadrícula siguiendo el camino correcto. Un puzzle intuitivo y adictivo que pone a prueba tu lógica.",
         btn_view_details: "Ver Detalles",
         btn_live_demo: "Demo en vivo",
         exp_title: "Experiencia Destacada",
@@ -282,7 +296,9 @@ const translations = {
         aurea_modal_title: "Aurea perfumes - Detalles",
         aurea_modal_desc: "Tienda online desarrollada usando <strong>Shopify</strong>, <strong>PHP</strong> y <strong>JavaScript</strong>. Tema personalizado e integración de aplicaciones.",
         factos_modal_title: "Factos - Detalles",
-        factos_modal_desc: "Plataforma desarrollada con <strong>JavaScript</strong>, <strong>Supabase</strong> y <strong>HTML5/CSS3</strong> para verificación social descentralizada."
+        factos_modal_desc: "Plataforma desarrollada con <strong>JavaScript</strong>, <strong>Supabase</strong> y <strong>HTML5/CSS3</strong> para verificación social descentralizada.",
+        connect_modal_title: "ConnectGame - Detalles",
+        connect_modal_desc: "Desarrollado con <strong>JavaScript Nativo</strong> y <strong>HTML5 Canvas</strong>. Cada nivel es diferente, con rutas únicas y dificultad progresiva. Fácil de jugar, difícil de dominar, ideal para retos rápidos."
     }
 };
 

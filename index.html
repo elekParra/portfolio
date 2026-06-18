@@ -224,20 +224,23 @@
 
                 <article class="projects__card">
                     <div class="projects__image">
-                        <img src="https://via.placeholder.com/600x400/1e1e1e/7C3AED?text=Project+4" alt="Project 4"
+                        <img src="img/connect_logo.png" alt="ConnectGame"
                             class="projects__img">
                     </div>
                     <div class="projects__content">
-                        <h3 class="projects__title">Shopify Store #2</h3>
-                        <p class="projects__description" data-i18n="proj4_desc">Sitio web de comercio electrónico creado
-                            con Shopify, PHP y JavaScript. Optimizado para altas conversiones.</p>
+                        <h3 class="projects__title">ConnectGame</h3>
+                        <p class="projects__description" data-i18n="proj4_desc">Conecta los números en orden dentro de una cuadrícula siguiendo el camino correcto. Un puzzle intuitivo y adictivo que pone a prueba tu lógica.</p>
                         <div class="projects__tags">
-                            <span class="projects__tag">Shopify</span>
-                            <span class="projects__tag">PHP</span>
                             <span class="projects__tag">JavaScript</span>
+                            <span class="projects__tag">HTML5 Canvas</span>
                         </div>
-                        <div class="projects__links">
-                            <a href="#" class="button button--small" data-i18n="btn_live_demo">Demo en vivo</a>
+                        <div class="projects__links" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                            <a href="https://github.com/elekParra/ConnectGame.git" target="_blank"
+                                class="button button--small button--secondary"><i class="fa-brands fa-github"></i>
+                                GitHub</a>
+                            <a href="#" target="_blank" class="button button--small" data-i18n="btn_live_demo">Demo en vivo</a>
+                            <button type="button" class="button button--small button--secondary" onclick="openConnectModal()"
+                                data-i18n="btn_view_details">Ver Detalles</button>
                         </div>
                     </div>
                 </article>
@@ -425,6 +428,22 @@
             <div class="modal__description">
                 <h4 data-i18n="modal_tech">Tecnologías Utilizadas</h4>
                 <p data-i18n="factos_modal_desc">Plataforma desarrollada con <strong>JavaScript</strong>, <strong>Supabase</strong> y <strong>HTML5/CSS3</strong> para verificación social descentralizada.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Connect Modal -->
+    <div class="modal" id="connect-modal">
+        <div class="modal__content">
+            <span class="modal__close" onclick="closeConnectModal()"><i class="fa-solid fa-xmark"></i></span>
+            <h3 class="modal__title" data-i18n="connect_modal_title">ConnectGame - Detalles</h3>
+            <div class="modal__images">
+                <img src="img/connect1.png" alt="ConnectGame Screenshot 1">
+                <img src="img/connect2.png" alt="ConnectGame Screenshot 2">
+            </div>
+            <div class="modal__description">
+                <h4 data-i18n="modal_tech">Tecnologías Utilizadas</h4>
+                <p data-i18n="connect_modal_desc">Desarrollado con <strong>JavaScript Nativo</strong> y <strong>HTML5 Canvas</strong>. Cada nivel es diferente, con rutas únicas y dificultad progresiva. Fácil de jugar, difícil de dominar, ideal para retos rápidos.</p>
             </div>
         </div>
     </div>
